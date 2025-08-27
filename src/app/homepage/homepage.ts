@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Login } from './login/login';
+import { ProfileComponent } from './profile/profile.component';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  selector: 'app-home',
+  imports: [ Login, ProfileComponent],
+  templateUrl: 'homepage.html',
 })
-export class App {
+
+export class Home {
   protected readonly title = 'Tom Cruise';
   handleClickEvent() {
     alert('Button clicked!');
