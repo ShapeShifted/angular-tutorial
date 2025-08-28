@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './ifelse.scss'
 })
 export class Ifelse {
+  display:boolean=true;
+  val = 10;
 
+  hide(){
+    this.display = !this.display;
+    
+  }
 }

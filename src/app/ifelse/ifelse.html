@@ -1,1 +1,12 @@
-<p>ifelse works!</p>
+<h1>If-Else Example</h1>
+
+@if(display){
+    <div style="background-color: aquamarine;height:200px;width: 200px;">
+</div>
+}@else{
+    <div style="background-color: white;height:200px;width: 200px;">
+</div>
+}
+
+<br><br>
+<button (click)="hide()">{{display?"Hide":"Show"}}</button>
