@@ -1,0 +1,15 @@
+<h1>Events</h1>
+
+<button class="btn" name="clicking" (click)="HandleEvent($event)">Click Me</button>
+
+<br><br>
+
+<div (mouseenter)="HandleEvent($event)" style="width: 100px; height: 100px; background-color: lightblue;">Mouseenter</div>
+
+<br><br>
+
+<div (mouseleave)="HandleEvent($event)" style="width: 100px; height: 100px; background-color: lightblue;">Mouseleave</div>
+
+<br><br>
+
+<input (blur)="HandleEvent($event)" (focus)="HandleEvent($event)" (input)="HandleEvent($event)">
