@@ -1,0 +1,7 @@
+<h1>Get and Set Input Field Value</h1>
+<input value = "{{username}}" (input)="getUsername($event)" #UsernameField type="text" placeholder="Enter user name">
+<br><br>
+<button (click)="setUsername()">Set Username</button>
+<button (click)="getUsernameWithTemplate(UsernameField.value)">Get Username</button>
+
+<h3> Username: {{username}}</h3>

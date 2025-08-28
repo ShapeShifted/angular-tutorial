@@ -1,1 +1,10 @@
-<p>counter works!</p>
+<h1>Counter App</h1>
+
+<div style="text-align: center;">
+    <h3 class="count">{{count}}</h3>
+    <div>
+        <button (click)="handleIncrement()" class="btn bg-green">Increment</button>
+        <button (click)="handleReset()" class="btn bg-black">Reset</button>
+        <button (click)="handleDecrement()" class="btn bg-red">Decrement</button>
+    </div>
+</div>

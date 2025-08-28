@@ -7,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrl: './counter.scss'
 })
 export class Counter {
+  count:number = 0;
+
+  handleIncrement() {
+    this.count++;
+  }
+
+  handleDecrement() {
+    {
+      if (this.count > 0) {
+        this.count--;
+      }
+    }
+  }
+
+  handleReset() {
+    this.count = 0;
+  }
 
 }
