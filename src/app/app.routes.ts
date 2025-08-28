@@ -7,6 +7,7 @@ import { Getset } from './getset/getset';
 import { Style } from './style/style';
 import { Ifelse } from './ifelse/ifelse';
 import { Switch } from './switch/switch';
+import { Forloop } from './forloop/forloop';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'page4', component: Style },
     { path: 'page5', component: Ifelse },
     { path: 'page6', component: Switch },
+    { path: 'page7', component: Forloop },
 ];
 
 @NgModule({
