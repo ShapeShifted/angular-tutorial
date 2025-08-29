@@ -7,11 +7,36 @@
 
 <hr>
 @for(student of info;track student.name;let id = $index){
-    <h2>
+    @if($first){
+       <h2 style="background-color: blanchedalmond;">
+        <span>ID: {{id}}</span>,
+        <span>Name: {{student.name}}</span>,
+        <span>Age: {{student.age}}</span>,
+        <span>Location: {{student.location}}</span>
+        <button (click)="getName(student.name)">Get Name</button>
+    </h2>  
+    }
+    @else{
+        @if($last){
+       <h2 style="background-color: lightcyan;">
         <span>ID: {{id}}</span>,
         <span>Name: {{student.name}}</span>,
         <span>Age: {{student.age}}</span>,
         <span>Location: {{student.location}}</span>
         <button (click)="getName(student.name)">Get Name</button>
     </h2>
+    }@else{
+        <h2>
+        <span>ID: {{id}}</span>,
+        <span>Name: {{student.name}}</span>,
+        <span>Age: {{student.age}}</span>,
+        <span>Location: {{student.location}}</span>
+        <button (click)="getName(student.name)">Get Name</button>
+    </h2>
+        }
+    }
+    
 }
+@empty{
+        <h2>Nothing is in here.</h2>
+    }
