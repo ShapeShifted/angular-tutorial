@@ -9,6 +9,7 @@ import { Ifelse } from './ifelse/ifelse';
 import { Switch } from './switch/switch';
 import { Forloop } from './forloop/forloop';
 import { Events } from './events/events';
+import { Signal1 } from './signal/signal';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -19,7 +20,8 @@ export const routes: Routes = [
     { path: 'page5', component: Ifelse },
     { path: 'page6', component: Switch },
     { path: 'page7', component: Forloop },
-     { path: 'page8', component: Events },
+    { path: 'page8', component: Events },
+    { path: 'page9', component: Signal1 },
 ];
 
 @NgModule({
