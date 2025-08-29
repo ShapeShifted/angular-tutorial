@@ -11,6 +11,7 @@ import { Forloop } from './forloop/forloop';
 import { Events } from './events/events';
 import { Signal1 } from './signal/signal';
 import { Effect } from './effect/effect';
+import { Twoway } from './twoway/twoway';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -23,7 +24,8 @@ export const routes: Routes = [
     { path: 'page7', component: Forloop },
     { path: 'page8', component: Events },
     { path: 'page9', component: Signal1 },
-    { path: 'page10', component: Effect }, //!!!
+    { path: 'page10', component: Effect },
+    { path: 'page11', component: Twoway },
 ];
 
 @NgModule({

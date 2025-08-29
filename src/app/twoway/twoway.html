@@ -1,0 +1,16 @@
+<h1>Two-Way Binding & Dynamic Styling</h1>
+<!--Default way-->
+<input type="text" [(ngModel)]="name" placeholder="enter name">
+
+<h2>{{name}}</h2>
+
+<hr><hr>
+
+<!-- Alternative way -->
+<input type="text" placeholder="Change name" (input)="ChangeName($event)"><br>
+
+<h1 [style.backgroundColor]="name ? 'lightblue' : 'transparent'">Dynamic Styling</h1>  
+
+<br>
+<button (click)="toggleZoom()">Zoom</button>
+<h2 [style.fontSize]="zoomToggle ? '60px' : '30px'">Look at me</h2>
