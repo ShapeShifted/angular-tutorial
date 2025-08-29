@@ -1,0 +1,20 @@
+<h1>Effect Works!</h1>
+
+@if(displayHeading){
+    <div>
+  <h2>Even Count!</h2>
+</div>
+}
+
+@else{
+    <div>
+  <h2>Odd Count!</h2>
+</div>
+}
+
+<button (click)="count.set(count() + 1)">Increment Count</button>
+
+<br><br>
+@if(timeHeading){
+    <h2>5 seconds has passed.</h2>
+}
