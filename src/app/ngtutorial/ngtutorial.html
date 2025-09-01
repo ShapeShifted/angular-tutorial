@@ -1,0 +1,38 @@
+<ul>
+    <li *ngFor="let student of students">
+        {{ student }}
+    </li>
+</ul>
+
+<h1>
+    <li *ngFor="let student of student_data">
+        {{ student.name }} - {{ student.age }} - {{ student.job }}
+    </li>
+</h1>
+
+<button (click)="changeAccountStatus()" *ngIf="login; else elseblock">Logout</button>
+
+<ng-template #elseblock>
+    <button (click)="changeAccountStatus()">Login</button>
+</ng-template>
+
+<br>
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="background-color: red;">Red Colour</h1>
+    <h1 *ngSwitchCase="'yellow'" style="background-color: yellow;">Yellow Colour</h1>
+    <h1 *ngSwitchCase="'orange'" style="background-color: orange;">Orange Colour</h1>
+    <h1 *ngSwitchCase="'purple'" style="background-color: purple;">Purple Colour</h1>
+    <h1 *ngSwitchCase="'green'" style="background-color: green;">Green Colour</h1>
+    <h1 *ngSwitchDefault>No Colour</h1>
+</div>
+
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('yellow')">Yellow</button>
+<button (click)="changeColor('orange')">Orange</button>
+<button (click)="changeColor('purple')">Purple</button>
+<button (click)="changeColor('green')">Green</button>
+
+<button (click)="toggle()">Toggling</button>
+
+<h1 *ngIf="show">Boom!</h1>

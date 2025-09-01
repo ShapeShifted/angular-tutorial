@@ -12,6 +12,9 @@ import { Events } from './events/events';
 import { Signal1 } from './signal/signal';
 import { Effect } from './effect/effect';
 import { Twoway } from './twoway/twoway';
+import { Ngtutorial } from './ngtutorial/ngtutorial';
+import { Routetest } from './routetest/routetest';
+import { Routetest2 } from './routetest2/routetest2';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/page1', pathMatch: 'full' },
@@ -26,6 +29,9 @@ export const routes: Routes = [
     { path: 'page9', component: Signal1 },
     { path: 'page10', component: Effect },
     { path: 'page11', component: Twoway },
+    { path: 'page12', component: Ngtutorial },
+    { path: 'page13', component: Routetest },
+    { path: 'page14', component: Routetest2 },  
 ];
 
 @NgModule({
